@@ -108,4 +108,8 @@ app.patch("/tasks/:id/priority", authMiddleware, async (req, res) => {
   res.json(task);
 });
 
+app.get("/", (req, res) => {
+  res.send("✅ Sravya's MERN Todo API is running!");
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
